@@ -43,11 +43,11 @@ fetch('user-data.json')
           const joinedDetails = document.createElement('div');
           joinedDetails.classList.add('joined-details');
 
-          const joinedDate = document.createElement('span');
-          joinedDate.classList.add('date');
-          joinedDate.textContent = 'Joined ' + contact.joinedDate;
+          const dateJoined = document.createElement('span');
+          dateJoined.classList.add('date');
+          dateJoined.textContent = 'Joined ' + contact.joinedDate;
 
-          joinedDetails.appendChild(joinedDate);
+          joinedDetails.appendChild(dateJoined);
 
           listItem.appendChild(contactDetails);
           listItem.appendChild(joinedDetails);
